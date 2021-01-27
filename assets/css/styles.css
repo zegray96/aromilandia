@@ -1,0 +1,221 @@
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1B538E; }
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1B538E; }
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1B538E; }
+
+h4 {
+  font-family: "Josefin Sans", sans-serif; }
+
+h5 {
+  font-family: "Josefin Sans", sans-serif; }
+
+label, select, input, textarea {
+  font-family: "Poppins", sans-serif; }
+
+header {
+  background: white;
+  border-bottom: solid 5px #5A5A5A; }
+
+.menu__logo {
+  height: 60px; }
+
+ul li {
+  list-style: none; }
+  ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold; }
+
+.tituloPagina {
+  background: #000a24;
+  background: linear-gradient(90deg, #000a24 0%, #3871e4 0%, #00d4ff 100%); }
+  .tituloPagina h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 60px; }
+
+@media (max-width: 575px) {
+  .tituloPagina {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 50px; }
+    .tituloPagina h1 {
+      font-size: 45px; } }
+
+@media (min-width: 576px) {
+  .tituloPagina {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    margin-bottom: 40px; }
+    .tituloPagina h1 {
+      font-size: 50px; } }
+
+@media (min-width: 768px) {
+  .tituloPagina {
+    padding-bottom: 90px;
+    padding-top: 90px;
+    margin-bottom: 90px; }
+    .tituloPagina h1 {
+      font-size: 55px; } }
+
+@media (min-width: 992px) {
+  .tituloPagina {
+    padding-bottom: 100px;
+    padding-top: 100px; }
+    .tituloPagina h1 {
+      font-size: 60px; } }
+
+.footer {
+  background-color: #000;
+  clear: both;
+  margin-top: 200px; }
+  .footer a {
+    text-decoration: none; }
+
+.footer__negro {
+  background-color: black; }
+
+.footer__negro--tituloCeleste {
+  color: #529EF2; }
+
+.footer__negro--tituloBlanco {
+  color: white;
+  font-size: 23px;
+  font-weight: bold; }
+
+.footer__azul {
+  background-color: #1B538E; }
+
+.footer__azul--copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
+
+.seccion {
+  margin-top: 100px;
+  background-color: #1B538E;
+  margin-bottom: 40px; }
+
+.seccion__titulo {
+  color: white;
+  text-align: center;
+  padding: 30px; }
+
+@media (max-width: 575px) {
+  .seccion__titulo {
+    font-size: 30px; }
+  .seccion {
+    margin-top: 50px; } }
+
+@media (min-width: 576px) {
+  .seccion__titulo {
+    font-size: 40px; }
+  .seccion {
+    margin-top: 50px; } }
+
+@media (min-width: 768px) {
+  .seccion__titulo {
+    font-size: 45px; }
+  .seccion {
+    margin-top: 100px; } }
+
+@media (min-width: 992px) {
+  .seccion__titulo {
+    font-size: 50px; } }
+
+.tituloCategoria {
+  margin-bottom: 20px; }
+  .tituloCategoria h1 {
+    font-size: 30px; }
+
+.cajaArticulo {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
+  .cajaArticulo img:hover {
+    transform: scale(1.1, 1.1); }
+
+.marcas__img {
+  height: 150px; }
+
+.marcas img:hover {
+  transform: scale(1.1, 1.1); }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.rowCenter {
+  flex-direction: row;
+  justify-content: center; }
+
+.rowSpaceBetween {
+  flex-direction: row;
+  justify-content: space-between; }
+
+.columnCenter {
+  flex-direction: column;
+  justify-content: center; }
+
+.columnSpaceBetween {
+  flex-direction: column;
+  justify-content: space-between; }
+
+.columnSpaceAround {
+  flex-direction: column;
+  justify-content: space-around; }
+
+.divBoton {
+  margin: 0 auto; }
+  .divBoton p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #637976; }
+  .divBoton p:hover {
+    background-color: black; }
+  .divBoton a {
+    text-decoration: none; }
+
+.tituloMedianoSeccion {
+  margin-bottom: 20px; }
+  .tituloMedianoSeccion h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px; }
+
+@media (max-width: 575px) {
+  .mapaSucursal {
+    height: 200px;
+    width: 260px; } }
+
+@media (min-width: 576px) {
+  .mapaSucursal {
+    height: 300px;
+    width: 360px; } }
+
+@media (min-width: 768px) {
+  .mapaSucursal {
+    height: 200px;
+    width: 260px; } }
+
+@media (min-width: 992px) {
+  .mapaSucursal {
+    height: 300px;
+    width: 360px; } }
+
+.icono-facebook {
+  color: #3a5795; }
+
+.icono-instagram {
+  color: #C25E30; }

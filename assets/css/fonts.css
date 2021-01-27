@@ -1,0 +1,10 @@
+/*Fuentes*/
+@font-face{
+	font-family: 'Poppins';
+	src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face{
+	font-family: 'Josefin Sans';
+	src: url(../fonts/JosefinSans-Light.ttf);
+}
