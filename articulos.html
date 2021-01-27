@@ -3,7 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aromilandia - Venta de articulos aromaticos</title>
+
+	<meta name="description" content="Encontrá los articulos que buscabas de la linea Saphirus, Iluminarte, Aero Soft, Ambar">
+	<meta name="keywords"  content="Saphirus, Ambar, Iluminarte, Aero Soft, Lamparas de sal del himalaya, Aromatizantes">
+
+	<link rel="icon" type="image/png"  href="assets/imagenes/logo.png">
+
+	<title>Aromilandia - Artículos</title>
 
 	<!-- Fuentes -->
 	<link rel="stylesheet" href="assets/css/fonts.css">
@@ -17,231 +23,402 @@
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
 
+	<!-- Mi css -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 	<header>
-
-		<nav class="navbar navbar-expand-lg navbar-light menu">
-			<div class="container-lg">
-				<!-- BEM -->
-				<a class="navbar-brand" href="#"><img class="menu__logo" src="assets/imagenes/logo.png" alt="logo"></a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-lg animate__animated animate__fadeIn">
+				<a class="navbar-brand" href="index.html"><img class="menu__logo" src="assets/imagenes/logo.png" alt="logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
+				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+					<ul class="navbar-nav text-center text-lg-right">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+							<a class="marginNavLink paginaActual" href="index.html">INICIO</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="nosotros.html">NOSOTROS</a>
+						<li class="nav-item"> 
+							<a class="marginNavLink" href="nosotros.html">NOSOTROS</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="articulos.html">ARTICULOS</a>
+						<li class="nav-item"> 
+							<a class="marginNavLink" href="articulos.html">ARTICULOS</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="quiero-vender.html">QUIERO VENDER</a>
+						<li class="nav-item"> 
+							<a class="marginNavLink" href="quiero-vender.html">QUIERO VENDER</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contacto.html">CONTACTO</a>
+						<li class="nav-item"> 
+							<a href="contacto.html">CONTACTO</a>
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div>	
 		</nav>
+
 	</header>
 
 	<div class="tituloPagina">
 		<h1 class="animate__animated animate__fadeInDown">ARTICULOS</h1>
 	</div>
 
-	<section class="container-sm mb-5">
+	<div class="container-sm mb-5">
 
-		<div class="dropdown mb-4">
-			<button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-				Categorías
-			</button>
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<li><a class="dropdown-item" href="#catDifusores">Difusores Aromáticos</a></li>
-				<li><a class="dropdown-item" href="#catTextiles">Textiles</a></li>
-				<li><a class="dropdown-item" href="#catVelas">Velas</a></li>
-			</ul>
+		<div class="row">
+			<!-- CATEGORIAS -->
+			<div class="col-12 col-lg-4 categorias mb-5 mb-lg-0">
+				<div class="accordion" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<a class="font-weight-bold tituloAzul text-decoration-none mb-0" style="cursor: pointer;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Categorías <i class="fas fa-sort-down"></i>
+								</a>
+							</h2>
+						</div>
+
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><a href="#catDifusores">Difusores Aromáticos</a></li>
+								<li class="list-group-item"><a href="#catTextiles">Textiles</a></li>
+								<li class="list-group-item"><a href="#catAromAmbiente">Aromatizantes para el Ambiente</a></li>
+								<li class="list-group-item"><a href="#catVelas">Velas</a></li>
+								<li class="list-group-item"><a href="#catHornillos">Hornillos</a></li>
+								<li class="list-group-item"><a href="#catEquipos">Equipos Aromáticos</a></li>
+								<li class="list-group-item"><a href="#catLamparas">Lámparas</a></li>
+								<li class="list-group-item"><a href="#catAromAuto">Aromatizantes para Auto</a></li>
+							</ul>	
+						</div>
+					</div>
+
+				</div>	
+			</div>
+			<!-- CATEGORIAS -->
+
+			<!-- ARTICULOS -->
+			<div class="col-12 col-lg-8"> 
+				<div id="catDifusores" class="mb-3">
+					<p class="tituloAzul">DIFUSORES AROMÁTICOS</p>
+				</div>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/difusor-saphirus.png" class="card-img-top" alt="difusor-saphirus">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Difusor Varillas Saphirus</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/difusor-premium-saphirus.png" class="card-img-top" alt="difusor-premium-saphirus">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Difusor Premium Varillas Saphirus</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/difusor-caja-madera.jpg" class="card-img-top" alt="difusor-caja-madera">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Difusor en Caja de Madera</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="catTextiles" class="mb-3">
+					<p class="tituloAzul">TEXTILES</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/textil-saphirus.png" class="card-img-top" alt="textil-saphirus">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Textil 250ml Saphirus</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/textil-black.png" class="card-img-top" alt="textil-black">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Textil 250ml Black Aromaterapia</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/home-spray.png" class="card-img-top" alt="home-spray">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Home Spray 500ml Saphirus</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="catAromAmbiente" class="mb-3">
+					<p class="tituloAzul">AROMATIZANTES PARA EL AMBIENTE</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/lata-ambar.png" class="card-img-top" alt="lata-ambar">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Lata Ambar</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/lata-saphirus.png" class="card-img-top" alt="lata-saphirus">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Lata Saphirus</p>
+							</div>
+						</div>
+					</div>
+ 
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/mini.png" class="card-img-top" alt="mini">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Mini Saphirus</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/sensaciones.png" class="card-img-top" alt="sensaciones">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Sensaciones Saphirus</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="catVelas" class="mb-3">
+					<p class="tituloAzul">VELAS</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/vela-x12-comun.png" class="card-img-top" alt="vela-x12-comun">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Velas x12 Comun</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/velon-7-dias.png" class="card-img-top" alt="velon-7-dias">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Velon 7 Días</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/vela-x12-aromatica.png" class="card-img-top" alt="vela-12-aromatica">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Velas x12 Aromatica</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="catHornillos" class="mb-3">
+					<p class="tituloAzul">HORNILLOS</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/hornillo-rustico.png" class="card-img-top" alt="hornillo-rustico">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Hornillo Rústico</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/hornito-esmaltado.png" class="card-img-top" alt="hornillo-esmaltado">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Hornillo Esmaltado</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="catEquipos" class="mb-3">
+					<p class="tituloAzul">EQUIPOS AROMÁTICOS</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/equipo-digital.png" class="card-img-top" alt="equipo-digital">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Equipo Digital</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/equipo-basico.png" class="card-img-top" alt="equipo-basico">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Equipo Básico</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="catLamparas" class="mb-3">
+					<p class="tituloAzul">LÁMPARAS</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/lampara-de-luna.png" class="card-img-top" alt="lampara-de-luna">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Lámpara de Luna</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/lampara-de-sal.png" class="card-img-top" alt="lampara-de-sal">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Lámpara de Sal</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="catAromAuto" class="mb-3">
+					<p class="tituloAzul">AROMATIZANTES PARA AUTO</p>
+				</div>
+				<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/ruta-66.png" class="card-img-top" alt="ruta-66">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Ruta 66 Saphirus</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card cajaArticulo h-100">
+							<img src="assets/imagenes/articulos/colgante-auto.png" class="card-img-top" alt="colgante-para-auto">
+
+							<div class="card-body">
+								<p class="text-center font-weight-bold h5">Colgante Aromático</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ARTICULOS -->
+			
 		</div>
-
-		<div id="catDifusores" class="tituloCategoria">
-			<h1>DIFUSORES AROMATICOS</h1>
-		</div>
-		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-5">
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/difusor-saphirus.png" class="card-img-top" alt="difusor-saphirus">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Difusor Varillas Saphirus</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/difusor-premium-saphirus.png" class="card-img-top" alt="ifusor-premium-saphirus">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Difusor Premium Varillas Saphirus</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/difusor-caja-madera.jpg" class="card-img-top" alt="difusor-caja-madera">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Difusor en Caja de Madera</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div id="catTextiles" class="tituloCategoria">
-			<h1>TEXTILES</h1>
-		</div>
-		<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-5">
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/textil-saphirus.png" class="card-img-top" alt="textil-saphirus">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Textil 250ml Saphirus</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/textil-black.png" class="card-img-top" alt="textil-black">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Textil 250ml Black Aromaterapia</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/home-spray.png" class="card-img-top" alt="home-spray">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Home Spray 500ml Saphirus</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div id="catVelas" class="tituloCategoria">
-			<h1>VELAS</h1>
-		</div>
-		<div class="row row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-5">
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/vela-x12-comun.png" class="card-img-top" alt="vela-x12-comun">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Velas x12 Comun</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/velon-7-dias.png" class="card-img-top" alt="velon-7-dias">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Velon 7 Días</h5>
-					</div>
-				</div>
-			</div>
-
-			<div class="col">
-				<div class="card cajaArticulo h-100">
-					<img src="assets/imagenes/articulos/vela-x12-aromatica.png" class="card-img-top" alt="vela-12-aromatica">
-
-					<div class="card-body">
-						<h5 class="text-center fw-bold">Velas x12 Aromatica</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</section>
-
+	</div>
+			
+	<!-- FOOTER -->
 	<footer class="text-white text-lg-start footer">
-		<!-- BEM -->
 		<div class="footer__negro container p-4">
 			<div class="row">
 				<div class="col-12 col-lg-4 mb-4 mb-md-0">
-					<!-- BEM -->
-					<h5 class="h4 fw-bold footer__negro--tituloCeleste">NAVEGACIÓN</h5>
+					<p class="h4 font-weight-bold footer__negro--tituloCeleste">NAVEGACIÓN</p>
 
 					<ul class="list-unstyled mb-4">
 						<li>
-							<a href="index.html" class="text-white">INICIO</a>
+							<a href="index.html" class="text-white font-weight-bold">INICIO</a>
 						</li>
 						<li>
-							<a href="nosotros.html" class="text-white">NOSOTROS</a>
+							<a href="nosotros.html" class="text-white font-weight-bold">NOSOTROS</a>
 						</li>
 						<li>
-							<a href="articulos.html" class="text-white">ARTICULOS</a>
+							<a href="articulos.html" class="text-white font-weight-bold">ARTICULOS</a>
 						</li>
 						<li>
-							<a href="quiero-vender.html" class="text-white">QUIERO VENDER</a>
+							<a href="quiero-vender.html" class="text-white font-weight-bold">QUIERO VENDER</a>
 						</li>
 						<li>
-							<a href="contacto.html" class="text-white">CONTACTO</a>
+							<a href="contacto.html" class="text-white font-weight-bold">CONTACTO</a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="col-12 col-lg-6 mb-4">
-					<!-- BEM -->
-					<h5 class="h4 fw-bold footer__negro--tituloCeleste">CONTACTO</h5>
-					<!-- BEM -->
-					<h4 class="footer__negro--tituloBlanco">Sucursal Tacuari</h4>
-					<p>Whatsapp: 3764-121021</p>
-					<p>Ubicacion: Av Tambor de Tacuari 6286</p>
-					<!-- BEM -->
-					<h4 class="footer__negro--tituloBlanco">Sucursal Lavalle</h4>
-					<p>Whatsapp: 3764-092388</p>
-					<p>Ubicacion: Av Lavalle 1416</p>
+					<p class="h4 font-weight-bold footer__negro--tituloCeleste">CONTACTO</p>
+
+					<p class="footer__negro--tituloBlanco h4">Sucursal Tacuari</p>
+					<p><i class="fab fa-whatsapp"></i> 3764-121021</p>
+					<p><i class="fas fa-map-marker-alt"></i> Av Tambor de Tacuari 6286 (Posadas - Misiones)</p>
+
+					<p class="footer__negro--tituloBlanco h4">Sucursal Lavalle</p>
+					<p><i class="fab fa-whatsapp"></i> 3764-092388</p>
+					<p><i class="fas fa-map-marker-alt"></i> Av Lavalle 1416 (Posadas - Misiones)</p>
 					
 				</div>
 					
 				<div class="col-12 col-lg-2 mb-4">
-					<!-- BEM -->
-					<h5 class="h4 fw-bold footer__negro--tituloCeleste">SEGUINOS</h5>
+					<p class="h4 font-weight-bold footer__negro--tituloCeleste">SEGUINOS</p>
 
-					<h1 class="float-start" style="margin-right: 20px;"><a href="#"><i class="fab fa-facebook icono-facebook"></i></a></h1>
-					<h1 class="float-start"><a href="#"><i class="fab fa-instagram icono-instagram"></i></a></h1>
+					<p class="float-left mr-3 h1"><a href="#"><i class="fab fa-facebook text-white"></i></a></p>
+					<p class="float-left h1"><a href="#"><i class="fab fa-instagram text-white"></i></a></p>
 				</div>
 			</div>
 		</div>
 
-		<!-- Copyright -->
-		<!-- BEM -->
 		<div class="text-center p-3 footer__azul">
-			<!-- BEM -->
 			<span class="footer__azul--copyright">&copy; Aromilandia - Todos los derechos reservados - 2021</span>
 		</div>
-		<!-- Copyright -->
 	</footer>
-	
+	<!-- FOOTER -->
+
+
+	<!-- SCRIPTS -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
 	<!-- Bootstraps -->
 	<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- SCRIPTS -->
 	
 </body>
 </html>

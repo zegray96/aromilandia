@@ -2,17 +2,17 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 16px; }
 
+.parrafo {
+  font-size: 20px; }
+
 h1 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #1B538E; }
+  font-family: "Josefin Sans", sans-serif; }
 
 h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #1B538E; }
+  font-family: "Josefin Sans", sans-serif; }
 
 h3 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #1B538E; }
+  font-family: "Josefin Sans", sans-serif; }
 
 h4 {
   font-family: "Josefin Sans", sans-serif; }
@@ -20,22 +20,63 @@ h4 {
 h5 {
   font-family: "Josefin Sans", sans-serif; }
 
+.tituloAzul {
+  color: #1B538E;
+  font-weight: bolder; }
+
+@media (max-width: 575px) {
+  .tituloAzul {
+    font-size: 24px; } }
+
+@media (min-width: 576px) {
+  .tituloAzul {
+    font-size: 30px; } }
+
 label, select, input, textarea {
   font-family: "Poppins", sans-serif; }
 
 header {
   background: white;
-  border-bottom: solid 5px #5A5A5A; }
+  border-bottom: solid 2px #5A5A5A; }
 
 .menu__logo {
   height: 60px; }
 
-ul li {
+header ul li {
   list-style: none; }
-  ul li a {
+  header ul li a {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: black;
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s; }
+  header ul li a:hover, header ul li a:focus {
+    background-size: 100% 2px;
+    text-decoration: none;
+    color: black; }
+
+@media (max-width: 576px) {
+  ul li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    ul li a {
+      font-size: 18px; } }
+
+@media (min-width: 577px) {
+  ul li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    ul li a {
+      font-size: 25px; } }
+
+@media (min-width: 992px) {
+  .marginNavLink {
+    margin-right: 20px; }
+  ul li a {
+    font-size: 18px; } }
 
 .tituloPagina {
   background: #000a24;
@@ -77,12 +118,24 @@ ul li {
     .tituloPagina h1 {
       font-size: 60px; } }
 
+footer ul li {
+  list-style: none; }
+  footer ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    background-image: linear-gradient(white, white);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s; }
+  footer ul li a:hover, footer ul li a:focus {
+    background-size: 100% 2px;
+    text-decoration: none; }
+
 .footer {
   background-color: #000;
   clear: both;
   margin-top: 200px; }
-  .footer a {
-    text-decoration: none; }
 
 .footer__negro {
   background-color: black; }
@@ -92,7 +145,6 @@ ul li {
 
 .footer__negro--tituloBlanco {
   color: white;
-  font-size: 23px;
   font-weight: bold; }
 
 .footer__azul {
@@ -134,23 +186,6 @@ ul li {
   .seccion__titulo {
     font-size: 50px; } }
 
-.tituloCategoria {
-  margin-bottom: 20px; }
-  .tituloCategoria h1 {
-    font-size: 30px; }
-
-.cajaArticulo {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
-  .cajaArticulo img:hover {
-    transform: scale(1.1, 1.1); }
-
-.marcas__img {
-  height: 150px; }
-
-.marcas img:hover {
-  transform: scale(1.1, 1.1); }
-
 .flex {
   display: flex;
   flex-wrap: wrap; }
@@ -175,47 +210,142 @@ ul li {
   flex-direction: column;
   justify-content: space-around; }
 
-.divBoton {
-  margin: 0 auto; }
-  .divBoton p {
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    background-color: #637976; }
-  .divBoton p:hover {
-    background-color: black; }
-  .divBoton a {
-    text-decoration: none; }
+.botonGrande {
+  color: #fff;
+  background-color: #439AF3;
+  border: 1px solid transparent;
+  border-color: #439AF3;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  transition: 0.3s; }
 
-.tituloMedianoSeccion {
-  margin-bottom: 20px; }
-  .tituloMedianoSeccion h2 {
-    font-size: 30px;
-    text-align: center;
-    padding: 30px; }
+.botonGrande:hover {
+  background-color: #3C88D5;
+  border-color: #3C88D5;
+  color: #fff;
+  text-decoration: none; }
 
-@media (max-width: 575px) {
-  .mapaSucursal {
-    height: 200px;
-    width: 260px; } }
+/*Nosotros*/
+.imgNosotros {
+  transition: transform .2s; }
 
-@media (min-width: 576px) {
-  .mapaSucursal {
-    height: 300px;
-    width: 360px; } }
+.imgNosotros:hover {
+  transform: scale(1.05); }
 
-@media (min-width: 768px) {
-  .mapaSucursal {
-    height: 200px;
-    width: 260px; } }
+.delay-1 {
+  animation-delay: 0s; }
+
+.delay-2 {
+  animation-delay: 0.5s; }
+
+.delay-3 {
+  animation-delay: 1s; }
+
+.delay-4 {
+  animation-delay: 1.5s; }
+
+/*Nosotros*/
+/*Quiero vender*/
+.cuadroImg {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  transition: transform .2s; }
+
+.cuadroImg:hover {
+  transform: scale(1.05); }
+
+@media (max-width: 992px) {
+  .tituloCompraIni {
+    font-size: 25px; } }
 
 @media (min-width: 992px) {
-  .mapaSucursal {
-    height: 300px;
-    width: 360px; } }
+  .tituloCompraIni {
+    font-size: 30px; } }
 
-.icono-facebook {
-  color: #3a5795; }
+/*Quiero vender/*
 
-.icono-instagram {
-  color: #C25E30; }
+/*Inicio*/
+.backgroundCelesteSlide {
+  background: #3225ff;
+  background: linear-gradient(90deg, #3225ff 0%, #011fff 0%, #00a8ff 100%);
+  padding: 20px; }
+
+.backgroundNegroSlide {
+  background: black;
+  padding: 20px; }
+
+.backgroundNaranjaSlide {
+  background: #ffd825;
+  background: linear-gradient(90deg, #ffd825 0%, #ffda01 0%, #ffab00 100%);
+  padding: 20px; }
+
+@media (max-width: 575px) {
+  .textSize-1 {
+    font-size: calc(1.6em + 1.6vw); }
+  .textSize-2 {
+    font-size: calc(2.2em + 2.2vw); }
+  .textSize-3 {
+    font-size: calc(1em + 1vw); }
+  .slideTexto {
+    width: 100%;
+    text-align: center; } }
+
+@media (min-width: 576px) {
+  .textSize-1 {
+    font-size: calc(1em + 1vw); }
+  .textSize-2 {
+    font-size: calc(1.5em + 1.5vw); }
+  .textSize-3 {
+    font-size: calc(0.8em + 0.8vw); }
+  .slideTexto {
+    width: 100%;
+    text-align: unset; } }
+
+@media (min-width: 768px) {
+  .textSize-1 {
+    font-size: calc(1.3em + 1.3vw); }
+  .textSize-2 {
+    font-size: calc(2em + 2vw); }
+  .textSize-3 {
+    font-size: calc(1.1em + 1.1vw); } }
+
+@media (min-width: 992px) {
+  .textSize-1 {
+    font-size: calc(1.8em + 1.8vw); }
+  .textSize-2 {
+    font-size: calc(2.6em + 2.6vw); }
+  .textSize-3 {
+    font-size: calc(1.3em + 1.3vw); } }
+
+.marcas__img {
+  height: 150px;
+  transition: transform .2s; }
+
+@media (min-width: 576px) {
+  .marcas__img:hover {
+    transform: scale(1.1); } }
+
+/*Inicio*/
+/*Articulos*/
+.cajaArticulo {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  transition: transform .2s; }
+
+@media (min-width: 576px) {
+  .cajaArticulo:hover {
+    transform: scale(1.05); } }
+
+.categorias ul li {
+  list-style: none; }
+  .categorias ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none; }
+
+/*Articulos*/
